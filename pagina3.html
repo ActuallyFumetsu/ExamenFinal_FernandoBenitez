@@ -21,16 +21,19 @@
             <label for="observation">Mensaje de Observación:</label>
             <textarea id="observation" name="observation" placeholder="Escribe tus observaciones" required></textarea>
 
-            <button type="submit">Enviar Formulario</button>
-            <button type="button" id="clear-form">Limpiar Formulario</button>
+            <div class="form-buttons">
+                <button type="submit" class="btn-submit">Enviar Formulario</button>
+                <button type="button" id="clear-form" class="btn-clear">Limpiar Formulario</button>
+            </div>
         </form>
         <p id="form-status"></p>
 
-        <nav>
-            <a href="index.html">Volver a Inicio</a>
-            <a href="pagina2.html">Ir a las API</a>
-            <a href="pagina4.html">Ir a la Tabla</a>
+        <nav class="navigation">
+            <a href="index.html" class="nav-link">Volver a Inicio</a>
+            <a href="pagina2.html" class="nav-link">Ir a las API</a>
+            <a href="pagina4.html" class="nav-link">Ir a la Tabla</a>
         </nav>
     </div>
 </body>
 </html>
+
