@@ -2,8 +2,8 @@
 emailjs.init("EroRhSfyHAcDiFRdF");
 
 // Enviar correo
-document.getElementById("email-form").addEventListener("submit", function (e) {
-    e.preventDefault();
+document.getElementById("login-form").addEventListener("submit", function (event) {
+    event.preventDefault();
 
     const recipientEmail = document.getElementById("recipient-email").value;
     const emailMessage = document.getElementById("email-message").value;
