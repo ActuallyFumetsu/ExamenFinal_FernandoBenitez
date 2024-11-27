@@ -358,3 +358,20 @@ button:hover {
 .nav-link:hover {
     text-decoration: underline;
 }
+
+.advice-container {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.advice-container p {
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+}
