@@ -4,44 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
-    <link rel="stylesheet" href="styles2.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.11.0/dist/email.min.js"></script>
     <script src="script2.js" defer></script>
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Bienvenido a la Página Principal</h1>
-        <p>Interacciones con APIs</p>
-    </header>
+        
+        <section id="email-section">
+            <h2>Enviar un Correo</h2>
+            <form id="email-form">
+                <input type="email" id="recipient-email" placeholder="Correo del destinatario" required>
+                <textarea id="email-message" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar Correo</button>
+            </form>
+            <p id="email-status"></p>
+        </section>
 
-    <section>
-        <h2>Enviar un Correo</h2>
-        <form id="email-form">
-            <label for="email">Correo:</label>
-            <input type="email" id="email" placeholder="Ingresa el correo del destinatario" required>
+        <section id="cat-section">
+            <h2>Imágenes de Gatos</h2>
+            <button id="fetch-cat">Ver Imagen de Gato</button>
+            <div id="cat-image-container">
+                <img id="cat-image" src="" alt="Imagen de un gato" style="display:none;">
+            </div>
+        </section>
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" placeholder="Escribe tu mensaje" required></textarea>
+        <section id="advice-section">
+            <h2>Consejos Aleatorios</h2>
+            <button id="fetch-advice">Obtener un Consejo</button>
+            <p id="advice"></p>
+        </section>
 
-            <button type="submit">Enviar Correo</button>
-        </form>
-        <div id="email-message"></div>
-    </section>
-
-    <section>
-        <h2>Buscar Imágenes</h2>
-        <form id="image-search-form">
-            <label for="query">Palabra clave:</label>
-            <input type="text" id="query" placeholder="Ejemplo: naturaleza" required>
-            <button type="submit">Buscar</button>
-        </form>
-        <div id="image-results"></div>
-    </section>
-
-    <section>
-        <h2>Consejo Motivacional</h2>
-        <button id="get-advice">Obtener un Consejo</button>
-        <div id="advice-result"></div>
-    </section>
+        <nav>
+            <a href="pagina1.html">Volver a Inicio</a>
+            <a href="pagina3.html">Ir a Página 3</a>
+        </nav>
+    </div>
 </body>
 </html>
