@@ -244,3 +244,50 @@ button {
     background-color: #007bff;
     color: #fff;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    animation: pulse 2s infinite;
+}
+
+tbody td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.action-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #218838;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #007bff;
+    }
+    50% {
+        background-color: #0056b3;
+    }
+    100% {
+        background-color: #007bff;
+    }
+}
