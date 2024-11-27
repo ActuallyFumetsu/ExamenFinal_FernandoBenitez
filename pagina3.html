@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Empleados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.11.0/dist/email.min.js"></script>
+    <script src="script3.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Empleado</h1>
+        <form id="employee-form">
+            <label for="name">Nombre del Empleado:</label>
+            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+
+            <label for="salary">Sueldo:</label>
+            <input type="number" id="salary" name="salary" placeholder="Ingresa tu sueldo" required>
+
+            <label for="observation">Mensaje de Observación:</label>
+            <textarea id="observation" name="observation" placeholder="Escribe tus observaciones" required></textarea>
+
+            <button type="submit">Enviar Formulario</button>
+            <button type="button" id="clear-form">Limpiar Formulario</button>
+        </form>
+        <p id="form-status"></p>
+
+        <nav>
+            <a href="index.html">Volver a Inicio</a>
+            <a href="pagina2.html">Ir a las API</a>
+            <a href="pagina4.html">Ir a la Tabla</a>
+        </nav>
+    </div>
+</body>
+</html>
