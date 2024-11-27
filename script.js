@@ -7,7 +7,7 @@ document.getElementById("login-form").addEventListener("submit", function (event
     const password = document.getElementById("password").value;
     const loginMessage = document.getElementById("login-message");
 
-    if (username === "admin" && password === "1234") {
+    if (username === "USER" && password === "PASS") {
         loginMessage.style.color = "#28a745";
         loginMessage.textContent = "Inicio de sesión exitoso. Redirigiendo...";
 
