@@ -1,18 +1,7 @@
 function calculateSalary() {
-    const salary = parseFloat(prompt("Ingresa tu salario:"));
-    const discount = parseFloat(prompt("Ingresa el descuento:"));
-    if (isNaN(salary) || isNaN(discount)) {
-        alert("Por favor, ingresa valores válidos.");
-    } else {
-        const total = salary - discount;
-        alert(`El salario final después del descuento es: $${total.toFixed(2)}`);
-    }
-}
-
-function calculateTotalPoints() {
     const points = [];
     for (let i = 1; i <= 3; i++) {
-        const point = parseFloat(prompt(`Ingresa el puntaje ${i}:`));
+        const point = parseFloat(prompt(`Ingresa el precio ${i}:`));
         if (isNaN(point)) {
             alert("Por favor, ingresa valores válidos.");
             return;
@@ -20,15 +9,25 @@ function calculateTotalPoints() {
         points.push(point);
     }
     const total = points.reduce((sum, p) => sum + p, 0);
-    alert(`El total de puntos es: ${total}`);
+    alert(`El total de precio es: ${total}`);
 }
 
-function calculatePercentage() {
-    const point = parseFloat(prompt("Ingresa el puntaje:"));
+function calculateTotalPoints() {
+    const point = parseFloat(prompt("Ingresa el precio:"));
     if (isNaN(point)) {
         alert("Por favor, ingresa un valor válido.");
     } else {
-        const percentage = point * 0.15;
-        alert(`El 15% del puntaje es: ${percentage.toFixed(2)}`);
+        const percentage = point * 0.30;
+        alert(`El precio del producto es: ${percentage.toFixed(2)}`);
+    }
+}
+
+function calculatePercentage() {
+    const point = parseFloat(prompt("Ingresa el precio:"));
+    if (isNaN(point)) {
+        alert("Por favor, ingresa un valor válido.");
+    } else {
+        const percentage = point * 0.25;
+        alert(`El precio del producto es: ${percentage.toFixed(2)}`);
     }
 }
